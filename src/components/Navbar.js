@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 
+//import icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const Navbar = () => {
   return (
     <Nav>
@@ -27,6 +31,7 @@ const Navbar = () => {
           Contact Us
         </Button>
       </NavBtn>
+      <FontAwesomeIcon icon={faBars} />
     </Nav>
   );
 };
@@ -57,6 +62,9 @@ const NavMenu = styled.div`
     display: flex;
     padding: 0;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 const Logo = styled.h1`
   font-style: italic;
@@ -65,6 +73,9 @@ const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin-right: 1.5rem;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export default Navbar;
