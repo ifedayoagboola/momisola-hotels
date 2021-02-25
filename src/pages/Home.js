@@ -1,9 +1,11 @@
 import React from "react";
+import Hero from "../components/Hero";
+import { SliderData } from "../data/SliderData";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <Hero slides={SliderData} />
     </div>
   );
 };
