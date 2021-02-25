@@ -4,15 +4,13 @@ import { Link } from "react-router-dom";
 import { Button } from "./Button";
 
 //import icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Bars } from "@styled-icons/fa-solid";
 
 const Navbar = () => {
   return (
     <Nav>
-      <Link to="/">
-        <Logo>MOMISOLA hotels</Logo>
-      </Link>
+      <Logo to="/">MOMISOLA hotels</Logo>
+
       <NavMenu>
         <ul>
           <li>
@@ -31,11 +29,15 @@ const Navbar = () => {
           Contact Us
         </Button>
       </NavBtn>
-      <FontAwesomeIcon icon={faBars} />
+      <RedBars />
     </Nav>
   );
 };
-
+const RedBars = styled(Bars)`
+  color: #000;
+  width: 1.5rem;
+  display: none;
+`;
 const Nav = styled.div`
   height: 5rem;
   background: red;
@@ -61,9 +63,6 @@ const NavMenu = styled.div`
     text-decoration: none;
     display: flex;
     padding: 0;
-  }
-  @media screen and (max-width: 768px) {
-    display: none;
   }
 `;
 const Logo = styled.h1`
