@@ -29,14 +29,24 @@ const Navbar = () => {
           Contact Us
         </Button>
       </NavBtn>
-      <RedBars />
+      <ToggleBars />
     </Nav>
   );
 };
-const RedBars = styled(Bars)`
-  color: #000;
+const ToggleBars = styled(Bars)`
+  color: #fff;
   width: 1.5rem;
   display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-80%, 50%);
+  }
 `;
 const Nav = styled.div`
   height: 5rem;
@@ -44,7 +54,7 @@ const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem;
+  padding: 0 3rem;
   position: fixed;
   top: 20;
   width: 100%;
@@ -64,9 +74,13 @@ const NavMenu = styled.div`
     display: flex;
     padding: 0;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 const Logo = styled.h1`
   font-style: italic;
+  color: #fff;
 `;
 const NavBtn = styled.div`
   display: flex;
