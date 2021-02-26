@@ -10,25 +10,27 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 
 //react routing & switching
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyle />
-      <Navbar />
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </div>
+    <Router>
+      <div className="App">
+        <GlobalStyle />
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

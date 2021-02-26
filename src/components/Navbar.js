@@ -49,30 +49,31 @@ const ToggleBars = styled(Bars)`
   }
 `;
 const Nav = styled.div`
-  height: 5rem;
-  background: red;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
   position: fixed;
-  top: 20;
   width: 100%;
+  z-index: 100;
 `;
 const NavMenu = styled.div`
   margin-right: -48px;
   ul {
     display: flex;
+    align-items: center;
   }
   li {
     list-style: none;
     margin-left: 3rem;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
   }
   a {
     color: #fff;
     text-decoration: none;
-    display: flex;
-    padding: 0;
   }
   @media screen and (max-width: 768px) {
     display: none;

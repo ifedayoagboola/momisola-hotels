@@ -2,7 +2,6 @@
   "name": "momisola-hotels",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ifedayoagboola.github.io/git",
   "dependencies": {
     "@babel/runtime": "^7.13.7",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
