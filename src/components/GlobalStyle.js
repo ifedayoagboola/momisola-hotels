@@ -10,11 +10,15 @@ const GlobalStyle = createGlobalStyle`
 }
 html, body{
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 a {
     color: #fff;
     text-decoration: none;
+}
+h1, p{
+    padding:0.5rem 0;
 }
 `;
 export default GlobalStyle;

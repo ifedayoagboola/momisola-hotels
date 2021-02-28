@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-
 import house1 from "../images/house-1.jpg";
 
-const HomeSection1 = () => {
+const HomeSection4 = () => {
   return (
-    <Section1>
+    <Section4>
+      <Image>
+        <img src={house1} alt="Section1 image" />
+      </Image>
       <Description>
         <h1>Explore our beautiful rooms</h1>
         <p>
@@ -19,14 +21,10 @@ const HomeSection1 = () => {
         </p>
         <Button primary="true">Book now</Button>
       </Description>
-      <Image>
-        <img src={house1} alt="Section1 image" />
-      </Image>
-    </Section1>
+    </Section4>
   );
 };
-
-const Section1 = styled.div`
+const Section4 = styled.div`
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -42,7 +40,7 @@ const Section1 = styled.div`
 `;
 const Description = styled.div`
   flex: 1;
-  padding-right: 5rem;
+  padding-left: 5rem;
   button {
     max-width: 160px;
   }
@@ -62,4 +60,4 @@ const Image = styled.div`
   }
 `;
 
-export default HomeSection1;
+export default HomeSection4;
