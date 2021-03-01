@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.a`
   background: ${({ primary }) => (primary ? "#000d1a" : "cd853f")};
+  background: ${({ secondary }) => (secondary ? "#CF843A" : "cd853f")};
   white-space: nowrap;
   outline: none;
   border: none;
@@ -15,6 +16,7 @@ export const Button = styled.a`
   justify-content: center;
   padding: ${({ big }) => (big ? "16px 40px" : "14px 24px")};
   padding: ${({ primary }) => (primary ? "#fff" : "#000d1a")};
+  color: ${({ secondary }) => (secondary ? "#000D1A" : "#fff")};
   font-size: ${({ big }) => (big ? "20px" : "14px")};
 
   &:hover {

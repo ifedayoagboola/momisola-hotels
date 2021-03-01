@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import house2 from "../images/house-2.jpg";
+import mom12 from "../images/mom12.jpeg";
 import { Button } from "./Button";
 
 const HomeSection = () => {
@@ -18,10 +18,10 @@ const HomeSection = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
           vitae?
         </p>
-        <Button primary="true">Book now</Button>
+        <Button secondary="true">Book now</Button>
       </Description>
       <Image>
-        <img src={house2} alt="" />
+        <img src={mom12} alt="" />
       </Image>
     </Section3>
   );
@@ -44,7 +44,7 @@ const Section3 = styled.div`
     top: 10px;
     left: 0;
     right: 0;
-    background: #000;
+    background: #000d1a;
   }
   ::after {
     content: "";
@@ -53,7 +53,7 @@ const Section3 = styled.div`
     bottom: 10px;
     left: 0;
     right: 0;
-    background: #000;
+    background: #000d1a;
   }
 
   @media (max-width: 1300px) {

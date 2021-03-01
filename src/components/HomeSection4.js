@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-import house1 from "../images/house-1.jpg";
+import mom20 from "../images/mom20.jpeg";
 
 const HomeSection4 = () => {
   return (
     <Section4>
       <Image>
-        <img src={house1} alt="Section1 image" />
+        <img src={mom20} alt="Section1 image" />
       </Image>
       <Description>
         <h1>Explore our beautiful rooms</h1>

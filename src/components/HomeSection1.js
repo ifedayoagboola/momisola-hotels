@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
 
-import house1 from "../images/house-1.jpg";
+import mom11 from "../images/mom11.jpeg";
 
 const HomeSection1 = () => {
   return (
@@ -20,7 +20,7 @@ const HomeSection1 = () => {
         <Button primary="true">Book now</Button>
       </Description>
       <Image>
-        <img src={house1} alt="Section1 image" />
+        <img src={mom11} alt="Section1 image" />
       </Image>
     </Section1>
   );

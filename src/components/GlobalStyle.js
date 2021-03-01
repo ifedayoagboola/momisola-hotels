@@ -10,8 +10,9 @@ const GlobalStyle = createGlobalStyle`
 }
 html, body{
     overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.2;
 }
 a {
     color: #fff;
@@ -19,6 +20,8 @@ a {
 }
 h1, p{
     padding:0.5rem 0;
+    line-height: 1.6;
+  
 }
 `;
 export default GlobalStyle;

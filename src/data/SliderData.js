@@ -1,40 +1,40 @@
 //import images
-import ImageOne from "../images/house-1.jpg";
-import ImageTwo from "../images/house-2.jpg";
-import ImageThree from "../images/house-3.jpg";
-import ImageFour from "../images/house-4.jpg";
+import Bg15 from "../images/mom15.jpeg";
+import Bg2 from "../images/mom2.jpeg";
+import Bg16 from "../images/mom16.jpeg";
+import Bg1 from "../images/mom1.jpeg";
 
 export const SliderData = [
   {
-    title: "Luxury Villa in Bali, Indonesia",
-    price: "$4,280,000",
+    title: "Luxury Villa with extra comfort.",
+    price: "₦50,000.00",
     path: "./homes",
     label: "View Home",
-    image: ImageOne,
+    image: Bg2,
     alt: "House",
   },
   {
-    title: "Luxury Villa in Bali, Indonesia",
-    price: "$4,280,000",
+    title: "Classic Villa with extra packages.",
+    price: "₦35,000.00",
     path: "./homes",
     label: "View Home",
-    image: ImageTwo,
+    image: Bg15,
     alt: "House",
   },
   {
-    title: "Luxury Villa in Bali, Indonesia",
-    price: "$4,280,000",
+    title: "Executive Business Class.",
+    price: "₦30,000.00",
     path: "./homes",
     label: "View Home",
-    image: ImageThree,
+    image: Bg16,
     alt: "House",
   },
   {
-    title: "Luxury Villa in Bali, Indonesia",
-    price: "$4,280,000",
+    title: "Quality service at it's cheapest.",
+    price: "₦10,000.00",
     path: "./homes",
     label: "View Home",
-    image: ImageFour,
+    image: Bg1,
     alt: "House",
   },
 ];

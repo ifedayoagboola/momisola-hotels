@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import house1 from "../images/house-1.jpg";
+import mom3 from "../images/mom3.jpeg";
+import mom7 from "../images/mom7.jpeg";
 
 const HomeSection2 = () => {
   return (
@@ -8,7 +9,7 @@ const HomeSection2 = () => {
       <h1>View our executive rooms</h1>
       <Images>
         <ImageA>
-          <img src={house1} alt="" />
+          <img src={mom3} alt="" />
           <p>
             one Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Asperiores, dolores. one Lorem ipsum dolor sit amet consectetur
@@ -17,7 +18,7 @@ const HomeSection2 = () => {
           </p>
         </ImageA>
         <ImageB>
-          <img src={house1} alt="" />
+          <img src={mom7} alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
             dolores..
