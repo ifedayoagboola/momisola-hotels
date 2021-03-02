@@ -1,5 +1,6 @@
 {
   "name": "momisola-hotels",
+  "homepage": "http://momisolahotels.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
