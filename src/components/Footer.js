@@ -11,16 +11,36 @@ const Footer = () => {
           <h1>We are home away from home</h1>
         </Column1>
         <Column2>
-          <Link>Quick Nav</Link>
-          <Link>Home</Link>
-          <Link>About us</Link>
-          <Link>Bookings</Link>
+          <ul>
+            <li>
+              <Link>Quick Nav</Link>
+            </li>
+            <li>
+              <Link>Home</Link>
+            </li>
+            <li>
+              <Link>About us</Link>
+            </li>
+            <li>
+              <Link>Bookings</Link>
+            </li>
+          </ul>
         </Column2>
         <Column3>
-          <Link>Contact</Link>
-          <Link>mail</Link>
-          <Link>Address</Link>
-          <Link>Customer Care</Link>
+          <ul>
+            <li>
+              <Link>Quick Nav</Link>
+            </li>
+            <li>
+              <Link>Home</Link>
+            </li>
+            <li>
+              <Link>About us</Link>
+            </li>
+            <li>
+              <Link>Bookings</Link>
+            </li>
+          </ul>
         </Column3>
       </Row1>
       <Row2>

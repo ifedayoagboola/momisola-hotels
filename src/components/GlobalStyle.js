@@ -23,5 +23,8 @@ h1, p{
     line-height: 1.6;
   
 }
+ul{
+    list-style: none;
+}
 `;
 export default GlobalStyle;
