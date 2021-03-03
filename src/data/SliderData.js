@@ -6,7 +6,8 @@ import Bg1 from "../images/mom1.jpeg";
 
 export const SliderData = [
   {
-    title: "Luxury Villa with extra comfort.",
+    title: "Best services with modern facilities",
+    slogan: "...we never forget you have a choice!",
     price: "₦50,000.00",
     path: "./homes",
     label: "View Home",
@@ -14,7 +15,8 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "Classic Villa with extra packages.",
+    title: "Your home away from home",
+    slogan: "...we never forget you have a choice!",
     price: "₦35,000.00",
     path: "./homes",
     label: "View Home",
@@ -22,7 +24,8 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "Executive Business Class.",
+    title: "Guests satisfaction at its peak",
+    slogan: "...we never forget you have a choice!",
     price: "₦30,000.00",
     path: "./homes",
     label: "View Home",
@@ -30,7 +33,8 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "Quality service at it's cheapest.",
+    title: "Rooms & suites, Long and short lodgings",
+    slogan: "...we never forget you have a choice!",
     price: "₦10,000.00",
     path: "./homes",
     label: "View Home",

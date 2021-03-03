@@ -50,7 +50,7 @@ const Hero = ({ slides }) => {
                   <HeroImage src={slide.image} alt={slide.alt} />
                   <HeroContent>
                     <h1>{slide.title}</h1>
-                    <p>{slide.price}</p>
+                    <p>{slide.slogan}</p>
                     <Button to={slide.path} primary="true">
                       {slide.label}
                       <Arrow />
@@ -137,11 +137,10 @@ const HeroContent = styled.div`
 
   h1 {
     font-size: clamp(1rem, 8vw, 2rem);
-    font-weight: 400;
+    font-weight: Bold;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: left;
-    margin-bottom: 0.8rem;
   }
   p {
     margin-bottom: 1.2rem;
@@ -178,6 +177,10 @@ const arrowButtons = css`
   &:hover {
     background: #cd853f;
     transform: scale(1.05);
+  }
+  @media (max-width: 1300px) {
+    width: 40px;
+    height: 40px;
   }
 `;
 const PrevArrow = styled(IoArrowBack)`

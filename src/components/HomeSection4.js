@@ -7,7 +7,7 @@ const HomeSection4 = () => {
   return (
     <Section4>
       <Image>
-        <img src={mom20} alt="Section1 image" />
+        <img src={mom20} alt="Section4Image" />
       </Image>
       <Description>
         <h1>Explore our beautiful rooms</h1>

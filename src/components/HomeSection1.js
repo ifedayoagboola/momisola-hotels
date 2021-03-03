@@ -20,7 +20,7 @@ const HomeSection1 = () => {
         <Button primary="true">Book now</Button>
       </Description>
       <Image>
-        <img src={mom11} alt="Section1 image" />
+        <img src={mom11} alt="Section1Image" />
       </Image>
     </Section1>
   );

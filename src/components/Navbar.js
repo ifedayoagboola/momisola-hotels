@@ -9,7 +9,11 @@ import { Bars } from "@styled-icons/fa-solid";
 const Navbar = () => {
   return (
     <Nav>
-      <Logo to="/">MOMISOLA hotels</Logo>
+      <Logo>
+        <Link to="/">
+          <h1>Momisola Hotels</h1>
+        </Link>
+      </Logo>
 
       <NavMenu>
         <ul>
@@ -35,11 +39,11 @@ const Navbar = () => {
 };
 const ToggleBars = styled(Bars)`
   color: #fff;
-  width: 1.5rem;
+  width: 1.3rem;
   display: none;
   @media screen and (max-width: 768px) {
     display: block;
-    width: 40px;
+    width: 30px;
     height: 40px;
     cursor: pointer;
     position: absolute;
@@ -82,6 +86,10 @@ const NavMenu = styled.div`
 const Logo = styled.h1`
   font-style: italic;
   color: #fff;
+  font-size: 1.4rem;
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 const NavBtn = styled.div`
   display: flex;

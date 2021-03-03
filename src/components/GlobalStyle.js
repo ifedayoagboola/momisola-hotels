@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 h1, p{
-    padding:0.5rem 0;
+    padding: 0.5rem 0;
     line-height: 1.6;
   
 }
