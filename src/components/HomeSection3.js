@@ -9,15 +9,11 @@ const HomeSection = () => {
       <Description>
         <h1>Stunning Interior</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          odio quis assumenda aliquam quod enim?
+          Are you interested in knowing about our offers? Follow us as we take
+          you around. To see some of our offers, kindly click on the "Book now"
+          button below. We are available 24/7 should you have any questions.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          vitae?
-        </p>
+        <p>You can also contact us by clicking on the contact button.</p>
         <Button secondary="true">Book now</Button>
       </Description>
       <Image>

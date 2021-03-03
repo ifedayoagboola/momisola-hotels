@@ -6,22 +6,21 @@ import mom7 from "../images/mom7.jpeg";
 const HomeSection2 = () => {
   return (
     <Section2>
-      <h1>View our executive rooms</h1>
+      <h1>Explore Our Services</h1>
       <Images>
         <ImageA>
           <img src={mom3} alt="" />
           <p>
-            one Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores, dolores. one Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Asperiores, dolores. one Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Asperiores, dolores.
+            We are elegant and efficient enough to accommodate you. Feel free to
+            take a tour on our facility and get familiar with the services we
+            offer. click on bookings above.
           </p>
         </ImageA>
         <ImageB>
           <img src={mom7} alt="" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            dolores..
+            We offer event services, long and short term lodging, Rooms and
+            suites, Kitchen services amongst a list of others.
           </p>
         </ImageB>
       </Images>

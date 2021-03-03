@@ -8,14 +8,16 @@ const HomeSection1 = () => {
   return (
     <Section1>
       <Description>
-        <h1>Explore our beautiful rooms</h1>
+        <h1>Welcome to Momisola Hotels</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          The vision of the Momisola Hotels is to put hospitality services on
+          the highest level at an affordable cost in order to satisfy the
+          demands and expectations of our guests.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          culpa. amet consectetur adipisicing elit.
+          Our aim is to make Momisola Hotels a place for excellent dining
+          experience, unforgettable encounters, business success, pleasant
+          meetings, short- and long-term lodgings.
         </p>
         <Button primary="true">Book now</Button>
       </Description>

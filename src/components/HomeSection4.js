@@ -12,12 +12,15 @@ const HomeSection4 = () => {
       <Description>
         <h1>Explore our beautiful rooms</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Our rooms and suite are fitted with bedside refrigerator; fully
+          airconditioned with ecofriendly Thermocool Inverter Split
+          Air-conditioners and in addition, each of the rooms has an electric
+          ceiling fan fitted.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          culpa. amet consectetur adipisicing elit.
+          The hotel provides free internet (Wi-Fi) access to guests during the
+          length of their stay. And there is telephone intercom for effective
+          communication with the Receptionist and Bar.
         </p>
         <Button primary="true">Book now</Button>
       </Description>

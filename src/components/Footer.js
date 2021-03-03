@@ -8,21 +8,22 @@ const Footer = () => {
     <FooterBg>
       <Row1>
         <Column1>
-          <h1>We are home away from home!</h1>
+          <h1>You are home away from home!</h1>
         </Column1>
         <Column2>
           <ul>
+            <h3>Reach out</h3>
             <li>
-              <Link to="/">Quick Nav</Link>
+              <Link to="/">+234 8131 534 590</Link>
             </li>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Bookings@momisolahotels.com</Link>
             </li>
             <li>
-              <Link to="/">About us</Link>
-            </li>
-            <li>
-              <Link to="/">Bookings</Link>
+              <Link to="/">
+                3, Laniyan Close, Opposite Honda Factory, KLM 6/ Ota/ Idiroko
+                Expressway, Sango Ota, Ogun State, Nigeria.
+              </Link>
             </li>
           </ul>
         </Column2>
@@ -82,6 +83,14 @@ const Column2 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h3 {
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+  }
+  li {
+    padding: 0.6rem 0;
+  }
   @media (max-width: 1300px) {
     ul {
       align-items: left;
