@@ -6,7 +6,7 @@ import { Button } from "./Button";
 //import icons
 import { Bars } from "@styled-icons/fa-solid";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo>
@@ -33,7 +33,7 @@ const Navbar = () => {
           Contact Us
         </Button>
       </NavBtn>
-      <ToggleBars />
+      <ToggleBars onClick={toggle} />
     </Nav>
   );
 };

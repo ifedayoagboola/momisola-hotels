@@ -33,7 +33,7 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "Rooms & suites, Long and short lodgings",
+    title: "Rooms & suites, Long & short lodgings",
     slogan: "...we never forget you have a choice!",
     price: "₦10,000.00",
     path: "./homes",

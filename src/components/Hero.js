@@ -9,18 +9,18 @@ const Hero = ({ slides }) => {
   const length = slides.length;
   const timeout = useRef(null);
 
-  useEffect(() => {
-    const nextSlide = () => {
-      setCurrent((current) => (current === length - 1 ? 0 : current + 1));
-    };
-    timeout.current = setTimeout(nextSlide, 7000);
+  // useEffect(() => {
+  //   const nextSlide = () => {
+  //     setCurrent((current) => (current === length - 1 ? 0 : current + 1));
+  //   };
+  //   timeout.current = setTimeout(nextSlide, 7000);
 
-    return function () {
-      if (timeout.current) {
-        clearTimeout(timeout.current);
-      }
-    };
-  }, [current, length]);
+  //   return function () {
+  //     if (timeout.current) {
+  //       clearTimeout(timeout.current);
+  //     }
+  //   };
+  // }, [current, length]);
 
   const nextSlide = () => {
     if (timeout.current) {
@@ -98,7 +98,7 @@ const HeroSlider = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 
   &::before {
     content: "";
@@ -145,7 +145,7 @@ const HeroContent = styled.div`
   p {
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-  }
+    font-size: 1.4rem;
   button {
     max-width: 160px;
   }

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 //global styling
 import GlobalStyle from "./components/GlobalStyle";
 
 //importing components
 import Navbar from "./components/Navbar";
+import Dropdown from "./components/Dropdown";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -13,11 +14,16 @@ import Services from "./pages/Services";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <Router>
       <div className="App">
         <GlobalStyle />
-        <Navbar />
+        <Navbar toggle={toggle} />
+        <Dropdown isOpen={isOpen} toggle={toggle} />
         <Switch>
           <Route exact path="/">
             <Home />

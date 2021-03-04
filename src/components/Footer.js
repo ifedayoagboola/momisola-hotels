@@ -2,6 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../components/Button";
 import { Link } from "react-router-dom";
+import { Facebook } from "@styled-icons/bootstrap/Facebook";
+import { InstagramWithCircle } from "@styled-icons/entypo-social/InstagramWithCircle";
+import { Whatsapp } from "@styled-icons/bootstrap/Whatsapp";
+import { Telephone } from "@styled-icons/bootstrap/Telephone";
+import { GeoAlt } from "@styled-icons/bootstrap/GeoAlt";
+import { MailWithCircle } from "@styled-icons/entypo-social/MailWithCircle";
 
 const Footer = () => {
   return (
@@ -9,17 +15,25 @@ const Footer = () => {
       <Row1>
         <Column1>
           <h1>You are home away from home!</h1>
+          <Socials>
+            <FacebookIcon />
+            <InstagramIcon />
+            <WhatsappIcon />
+          </Socials>
         </Column1>
         <Column2>
           <ul>
             <h3>Reach out</h3>
             <li>
+              <PhoneIcon />
               <Link to="/">+234 8131 534 590</Link>
             </li>
             <li>
+              <MailIcon />
               <Link to="/">Bookings@momisolahotels.com</Link>
             </li>
             <li>
+              <LocationIcon />
               <Link to="/">
                 3, Laniyan Close, Opposite Honda Factory, KLM 6/ Ota/ Idiroko
                 Expressway, Sango Ota, Ogun State, Nigeria.
@@ -29,9 +43,7 @@ const Footer = () => {
         </Column2>
         <Column3>
           <ul>
-            <li>
-              <Link to="/">Quick Nav</Link>
-            </li>
+            <h3>Quick Nav</h3>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -42,17 +54,9 @@ const Footer = () => {
               <Link to="/">Bookings</Link>
             </li>
           </ul>
+          <Button secondary="true">Book now</Button>
         </Column3>
       </Row1>
-      <Row2>
-        <Socials>
-          <Link to="/">Facebook</Link>
-          <Link to="/">Instagram</Link>
-          <Link to="/">Mail</Link>
-        </Socials>
-
-        <Button secondary="true">Book now</Button>
-      </Row2>
     </FooterBg>
   );
 };
@@ -67,15 +71,21 @@ const FooterBg = styled.div`
 `;
 const Row1 = styled.div`
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   @media (max-width: 1300px) {
     display: block;
   }
 `;
 const Column1 = styled.div`
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #fff;
+    margin: 1rem;
+  }
+  @media (max-width: 1300px) {
+    h1 {
+      font-size: 3.5rem;
+    }
   }
 `;
 const Column2 = styled.div`
@@ -83,12 +93,16 @@ const Column2 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h3 {
+    font-size: 2rem;
     text-align: left;
     color: #fff;
     font-weight: bold;
+    padding: 2rem 0;
   }
   li {
+    font-size: 1.2rem;
     padding: 0.6rem 0;
   }
   @media (max-width: 1300px) {
@@ -97,20 +111,58 @@ const Column2 = styled.div`
       justify-content: left;
       text-align: left;
     }
+
+    h3 {
+      font-size: 2rem;
+    }
   }
 `;
-const Column3 = styled(Column2)``;
-const Row2 = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  p {
+const Column3 = styled.div`
+  h3 {
+    font-size: 2rem;
     color: #fff;
   }
+  margin: 2rem 0 2rem 2rem;
+  li {
+    padding: 1rem 0;
+  }
+  a {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 1300px) {
+    margin: 2rem 0.5rem;
+  }
 `;
-const Socials = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const Socials = styled.div``;
+const FacebookIcon = styled(Facebook)`
+  color: #fff;
+  width: 50px;
+  margin: 1rem;
 `;
+const InstagramIcon = styled(InstagramWithCircle)`
+  color: #fff;
+  width: 60px;
+  margin: 1rem;
+`;
+const WhatsappIcon = styled(Whatsapp)`
+  color: #fff;
+  width: 75px;
+  margin: 1rem;
+`;
+const PhoneIcon = styled(Telephone)`
+  color: #fff;
+  width: 30px;
+  margin-right: 0.7rem;
+`;
+const LocationIcon = styled(GeoAlt)`
+  color: #fff;
+  width: 30px;
+  margin-right: 0.7rem;
+`;
+const MailIcon = styled(MailWithCircle)`
+  color: #fff;
+  width: 30px;
+  margin-right: 0.7rem;
+`;
+
 export default Footer;

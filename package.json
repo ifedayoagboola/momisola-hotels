@@ -8,6 +8,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@styled-icons/bootstrap": "^10.29.0",
+    "@styled-icons/entypo-social": "^10.18.0",
     "@styled-icons/fa-solid": "^10.26.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
