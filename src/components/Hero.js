@@ -146,6 +146,7 @@ const HeroContent = styled.div`
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     font-size: 1.4rem;
+  }
   button {
     max-width: 160px;
   }

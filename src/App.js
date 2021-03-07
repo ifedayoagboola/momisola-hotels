@@ -15,9 +15,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <Router>
       <div className="App">

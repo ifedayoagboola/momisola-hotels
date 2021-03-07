@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
+import "../styles/NavbarStyles.css";
 
 //import icons
 import { Bars } from "@styled-icons/fa-solid";
 
 const Navbar = ({ toggle }) => {
+  const [navBg, setNavBg] = useState(false);
+  const changeBg = () => {
+    if (window.scrollY >= 80) {
+      setNavBg(true);
+    } else {
+      setNavBg(false);
+    }
+  };
+  window.addEventListener("scroll", changeBg);
+
   return (
-    <Nav>
+    <Nav className={navBg ? "active" : ""}>
       <Logo>
         <Link to="/">
           <h1>Momisola Hotels</h1>
@@ -52,6 +63,7 @@ const ToggleBars = styled(Bars)`
     transform: translate(-80%, 50%);
   }
 `;
+
 const Nav = styled.div`
   height: 60px;
   display: flex;
@@ -60,8 +72,9 @@ const Nav = styled.div`
   padding: 1rem 3rem;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 999;
 `;
+
 const NavMenu = styled.div`
   margin-right: -48px;
   ul {
