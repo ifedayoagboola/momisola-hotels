@@ -91,6 +91,7 @@ const NavMenu = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1.5rem;
     color: #fff;
     font-size: 1.5rem;
     text-decoration: none;

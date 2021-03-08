@@ -37,8 +37,10 @@ const Footer = () => {
             <li>
               <LocationIcon />
               <Link to="/">
-                3, Laniyan Close, Opposite Honda Factory, KLM 6/ Ota/ Idiroko
-                Expressway, Sango Ota, Ogun State, Nigeria.
+                <p>
+                  3, Laniyan Close, Opposite Honda Factory, KLM 6, Ota, Idiroko
+                  Expressway, Sango Ota, Ogun State, Nigeria.
+                </p>
               </Link>
             </li>
           </ul>
@@ -107,6 +109,7 @@ const Column2 = styled.div`
   li {
     font-size: 1rem;
     padding: 0.6rem 0;
+    display: flex;
   }
   @media (max-width: 1300px) {
     ul {
@@ -159,7 +162,7 @@ const PhoneIcon = styled(Telephone)`
 `;
 const LocationIcon = styled(GeoAlt)`
   color: #fff;
-  width: 30px;
+  width: 100px;
   margin-right: 0.7rem;
 `;
 const MailIcon = styled(MailWithCircle)`

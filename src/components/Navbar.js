@@ -40,9 +40,9 @@ const Navbar = ({ toggle }) => {
         </ul>
       </NavMenu>
       <NavBtn>
-        <Button to="/contact" primary="true">
-          Contact Us
-        </Button>
+        <Link to="/contact">
+          <Button primary="true">Contact Us</Button>
+        </Link>
       </NavBtn>
       <ToggleBars onClick={toggle} />
     </Nav>
@@ -65,7 +65,7 @@ const ToggleBars = styled(Bars)`
 `;
 
 const Nav = styled.div`
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;

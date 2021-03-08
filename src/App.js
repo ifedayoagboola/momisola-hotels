@@ -9,6 +9,7 @@ import Dropdown from "./components/Dropdown";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
 //react routing & switching
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/services">
             <Services />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
       </div>

@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Bar from "../images/mom4.jpeg";
-import Room from "../images/mom6.jpeg";
+import kings from "../images/mom14.jpeg";
 import mom8 from "../images/mom8.jpeg";
+import queens from "../images/mom1.jpeg";
+import royals from "../images/mom18.jpeg";
+import room15 from "../images/mom9.jpeg";
 import HomeSection4 from "../components/HomeSection4";
 import Footer from "../components/Footer";
 
@@ -13,7 +16,7 @@ const Services = () => {
         <Grid>
           <GridItem>
             <Card>
-              <img src={Bar} alt="" />
+              <img src={queens} alt="" />
               <Content>
                 <h1>Queens Room</h1>
                 <p>
@@ -27,7 +30,7 @@ const Services = () => {
         <Grid>
           <GridItem>
             <Card>
-              <img src={Room} alt="" />
+              <img src={kings} alt="" />
               <Content>
                 <h1>Kings Room</h1>
                 <p>At Momisola Hotels, you are not lesser than a king.</p>
@@ -39,7 +42,7 @@ const Services = () => {
         <Grid>
           <GridItem>
             <Card>
-              <img src={mom8} alt="" />
+              <img src={royals} alt="" />
               <Content>
                 <h1>Royal Suite</h1>
                 <p>
@@ -55,7 +58,7 @@ const Services = () => {
         <Grid>
           <GridItem>
             <Card>
-              <img src={mom8} alt="" />
+              <img src={Bar} alt="" />
               <Content>
                 <h1>Kitchen and Bar</h1>
                 <p>Drinks, local and international dishes, just a call away.</p>
@@ -79,7 +82,7 @@ const Services = () => {
         <Grid>
           <GridItem>
             <Card>
-              <img src={mom8} alt="" />
+              <img src={room15} alt="" />
               <Content>
                 <h1>Suites & Rooms</h1>
                 <p>
@@ -106,9 +109,9 @@ const Mother = styled.div`
   min-height: 100vh;
   background-color: #000d1a;
   padding: 10rem 0 0;
-  @media (max-width: 60em) {
+  @media (max-width: 1300px) {
     display: block;
-    padding: 5rem 0;
+    padding: 5rem 0 0;
   }
 `;
 const Grid = styled.div`
@@ -119,7 +122,7 @@ const Grid = styled.div`
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   align-items: start;
-  @media (max-width: 60em) {
+  @media (max-width: 1300px) {
     grid-gap: 3rem;
     width: 100%;
   }
