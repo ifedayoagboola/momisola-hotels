@@ -14,7 +14,7 @@ const Footer = () => {
     <FooterBg>
       <Row1>
         <Column1>
-          <h1>You are home away from home!</h1>
+          <h1>We never forget you have a choice!</h1>
           <Socials>
             <FacebookIcon />
             <InstagramIcon />
@@ -26,7 +26,9 @@ const Footer = () => {
             <h3>Reach out</h3>
             <li>
               <PhoneIcon />
-              <Link to="/">+234 8131 534 590</Link>
+              <Link to="/">
+                +234 8131 534 590 <br /> +234 814 774 7673
+              </Link>
             </li>
             <li>
               <MailIcon />
@@ -57,6 +59,7 @@ const Footer = () => {
           <Button secondary="true">Book now</Button>
         </Column3>
       </Row1>
+      <p>copyright 2021@momisolahotels.com</p>
     </FooterBg>
   );
 };
@@ -95,14 +98,14 @@ const Column2 = styled.div`
   align-items: center;
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
     color: #fff;
     font-weight: bold;
     padding: 2rem 0;
   }
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.6rem 0;
   }
   @media (max-width: 1300px) {
@@ -113,13 +116,13 @@ const Column2 = styled.div`
     }
 
     h3 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 `;
 const Column3 = styled.div`
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
   }
   margin: 2rem 0 2rem 2rem;
@@ -127,7 +130,7 @@ const Column3 = styled.div`
     padding: 1rem 0;
   }
   a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   @media (max-width: 1300px) {
     margin: 2rem 0.5rem;

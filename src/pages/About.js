@@ -27,7 +27,7 @@ const AboutContainer = styled.div`
   padding: 0 10rem;
   overflow: hidden;
   @media (max-width: 1300px) {
-    background: transparent;
+    background: #191d28;
     padding: 0;
   }
 `;

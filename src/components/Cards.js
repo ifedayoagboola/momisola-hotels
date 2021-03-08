@@ -1,90 +1,50 @@
 import React from "react";
 import styled from "styled-components";
-import Bar from "../images/mom4.jpeg";
-import Room from "../images/mom6.jpeg";
-import mom8 from "../images/mom8.jpeg";
-import HomeSection4 from "../components/HomeSection4";
-import Footer from "../components/Footer";
+import house1 from "../images/mom4.jpeg";
 
-const Services = () => {
+const Cards = () => {
   return (
     <div>
       <Mother>
         <Grid>
           <GridItem>
             <Card>
-              <img src={Bar} alt="" />
-              <Content>
-                <h1>Queens Room</h1>
-                <p>
-                  Room deliberately set to treat you like a queen that you are
-                </p>
-                <Button>Book now</Button>
-              </Content>
-            </Card>
-          </GridItem>
-        </Grid>
-        <Grid>
-          <GridItem>
-            <Card>
-              <img src={Room} alt="" />
-              <Content>
-                <h1>Kings Room</h1>
-                <p>At Momisola Hotels, you are not lesser than a king.</p>
-                <Button>Book now</Button>
-              </Content>
-            </Card>
-          </GridItem>
-        </Grid>
-        <Grid>
-          <GridItem>
-            <Card>
-              <img src={mom8} alt="" />
-              <Content>
-                <h1>Royal Suite</h1>
-                <p>
-                  The best of the suites. Feels nothing less than your home.
-                </p>
-                <Button>Book now</Button>
-              </Content>
-            </Card>
-          </GridItem>
-        </Grid>
-      </Mother>
-      <Mother>
-        <Grid>
-          <GridItem>
-            <Card>
-              <img src={mom8} alt="" />
+              <img src={house1} alt="" />
               <Content>
                 <h1>Kitchen and Bar</h1>
-                <p>Drinks, local and international dishes, just a call away.</p>
-                <Button>Book now</Button>
-              </Content>
-            </Card>
-          </GridItem>
-        </Grid>
-        <Grid>
-          <GridItem>
-            <Card>
-              <img src={mom8} alt="" />
-              <Content>
-                <h1>Long term lodge</h1>
-                <p>Discounts on all lodges for more than three months.</p>
-                <Button>Book now</Button>
-              </Content>
-            </Card>
-          </GridItem>
-        </Grid>
-        <Grid>
-          <GridItem>
-            <Card>
-              <img src={mom8} alt="" />
-              <Content>
-                <h1>Suites & Rooms</h1>
                 <p>
-                  Fully Air-conditioned with Cable TV, internet and LAN phone
-                  installed
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, hic.
+                </p>
+                <Button>Book now</Button>
+              </Content>
+            </Card>
+          </GridItem>
+        </Grid>
+        <Grid>
+          <GridItem>
+            <Card>
+              <img src={house1} alt="" />
+              <Content>
+                <h1>Kitchen and Bar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, hic.
+                </p>
+                <Button>Book now</Button>
+              </Content>
+            </Card>
+          </GridItem>
+        </Grid>
+        <Grid>
+          <GridItem>
+            <Card>
+              <img src={house1} alt="" />
+              <Content>
+                <h1>Kitchen and Bar</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, hic.
                 </p>
                 <Button>Book now</Button>
               </Content>
@@ -92,8 +52,6 @@ const Services = () => {
           </GridItem>
         </Grid>
       </Mother>
-      <HomeSection4 />
-      <Footer />
     </div>
   );
 };
@@ -164,7 +122,7 @@ const Button = styled.div`
   display: block;
   width: 100%;
   padding: 1.5rem;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
   color: #3363ff;
   background-color: #d8e0fd;
@@ -179,4 +137,4 @@ const Button = styled.div`
   }
 `;
 
-export default Services;
+export default Cards;

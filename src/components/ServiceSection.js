@@ -10,26 +10,25 @@ const ServiceSection = () => {
       <Service>
         <Content>
           <CctvIcon />
-          <h5>Momisola Hotels1</h5>
+          <h5>Secured Facility</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae
-            voluptate enim recusandae.
+            We provide our guests with 24/7 armed security and surveillance.
           </p>
         </Content>
         <Content>
           <BulbIcon />
-          <h5>Momisola Hotels2</h5>
+          <h5>Stable Electricity</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae
-            voluptate enim recusandae.
+            24/7 power supply. Enough backups and non-noticeable switch between
+            power supplies.
           </p>
         </Content>
         <Content>
           <AirIcon />
-          <h5>Momisola Hotels3</h5>
+          <h5>Fully Air-conditioned</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae
-            voluptate enim recusandae.
+            All rooms are well ventilated and fully air-conditioned with back up
+            fans fitted.
           </p>
         </Content>
       </Service>
