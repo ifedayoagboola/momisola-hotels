@@ -8,40 +8,44 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
-    <ContactPage>
-      <MapSection>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63409.461805202234!2d3.183582413807997!3d6.635575079324781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s3%2C%20Laniyan%20Close%2C%20Opposite%20Honda%20Factory%2C%20KLM%206%2C%20Ota%2C%20Idiroko%20Expressway%2C%20Sango%20Ota%2C%20Ogun%20State%2C%20Nigeria.!5e0!3m2!1sen!2sng!4v1615235642957!5m2!1sen!2sng"
-          width="600"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </MapSection>
-      <ContactSection>
-        <ContactItem
-          icon={telephone}
-          text1={"+234 814 774 7673"}
-          text2={"+234 8131 534 590"}
-          title={"phone"}
-        />
-        <ContactItem
-          icon={letter}
-          text1={"Bookings@momisolahotels.com"}
-          text2={"customercare@momisolahotels.com"}
-          title={"email"}
-        />
-        <ContactItem
-          icon={location}
-          text1={
-            "3, Laniyan Close, Opposite Honda Factory, KLM 6, Ota, Idiroko Expressway, Sango Ota"
-          }
-          text2={" Ogun State, Nigeria."}
-          title={"address"}
-        />
-      </ContactSection>
-    </ContactPage>
+    <div>
+      <ContactPage>
+        <MapSection>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63409.461805202234!2d3.183582413807997!3d6.635575079324781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s3%2C%20Laniyan%20Close%2C%20Opposite%20Honda%20Factory%2C%20KLM%206%2C%20Ota%2C%20Idiroko%20Expressway%2C%20Sango%20Ota%2C%20Ogun%20State%2C%20Nigeria.!5e0!3m2!1sen!2sng!4v1615235642957!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </MapSection>
+        <ContactSection>
+          <ContactItem
+            icon={telephone}
+            text1={"+234 814 774 7673"}
+            text2={"+234 8131 534 590"}
+            title={"phone"}
+          />
+          <ContactItem
+            icon={letter}
+            text1={"Bookings@momisolahotels.com"}
+            text2={"customercare@momisolahotels.com"}
+            title={"email"}
+          />
+          <ContactItem
+            icon={location}
+            text1={
+              "3, Laniyan Close, Opposite Honda Factory, KLM 6, Ota, Idiroko Expressway, Sango Ota"
+            }
+            text2={" Ogun State, Nigeria."}
+            title={"address"}
+          />
+        </ContactSection>
+      </ContactPage>
+
+      <Footer />
+    </div>
   );
 };
 
@@ -49,7 +53,7 @@ const ContactPage = styled.div`
   background: #000d1a;
   padding: 10rem 10rem 0;
   display: grid;
-  margin-bottom: 6rem;
+  margin-bottom: 0.1rem;
   grid-template-columns: repeat(2, 1fr);
   @media screen and (max-width: 1300px) {
     grid-template-columns: repeat(1, 1fr);
@@ -58,7 +62,7 @@ const ContactPage = styled.div`
 `;
 const MapSection = styled.div`
   width: 97%;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #191d2b;
   iframe {
     width: 100%;

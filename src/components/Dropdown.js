@@ -27,9 +27,11 @@ const Dropdown = ({ isOpen, toggle }) => {
           </NavMenu>
         </DropdownMenu>
         <BtnWrap>
-          <Button primary="true" round="true" big="tue" to="/Contact">
-            Contact
-          </Button>
+          <Link to="/contact">
+            <Button primary="true" round="true" big="tue">
+              Contact
+            </Button>
+          </Link>
         </BtnWrap>
       </DropdownWrapper>
     </DropdownContainer>
