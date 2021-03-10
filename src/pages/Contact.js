@@ -52,7 +52,8 @@ const ContactPage = styled.div`
   margin-bottom: 6rem;
   grid-template-columns: repeat(2, 1fr);
   @media screen and (max-width: 1300px) {
-    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5rem 0 0;
   }
 `;
 const MapSection = styled.div`
@@ -63,13 +64,18 @@ const MapSection = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media screen and (max-width: 1300px) {
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 `;
 const ContactSection = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
   width: 100%;
+  margin: auto;
 `;
 
 export default Contact;

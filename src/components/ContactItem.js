@@ -42,6 +42,12 @@ const RightItems = styled.div`
     color: #fff;
   }
   margin-left: 2rem;
+  @media screen and (max-width: 1300px) {
+    margin-left: 0.8rem;
+    p {
+      padding: 0;
+    }
+  }
 `;
 const ContactContent = styled.div`
   width: 100%;
