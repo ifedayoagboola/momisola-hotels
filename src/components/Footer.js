@@ -16,9 +16,15 @@ const Footer = () => {
         <Column1>
           <h1>We never forget you have a choice!</h1>
           <Socials>
-            <FacebookIcon />
-            <InstagramIcon />
-            <WhatsappIcon />
+            <Link to="https://web.facebook.com/momisolahotels">
+              <FacebookIcon />
+            </Link>
+            <Link to="https://www.instagram.com/momisolahotels/">
+              <InstagramIcon />
+            </Link>
+            <Link to="https://api.whatsapp.com/send?phone=08131534590">
+              <WhatsappIcon />
+            </Link>
           </Socials>
         </Column1>
         <Column2>
@@ -26,22 +32,16 @@ const Footer = () => {
             <h3>Reach out</h3>
             <li>
               <PhoneIcon />
-              <Link to="/">
-                +234 8131 534 590 <br /> +234 814 774 7673
-              </Link>
+              +234 8131 534 590 <br /> +234 814 774 7673
             </li>
             <li>
               <MailIcon />
-              <Link to="/">Bookings@momisolahotels.com</Link>
+              Bookings@momisolahotels.com
             </li>
             <li>
               <LocationIcon />
-              <Link to="/">
-                <p>
-                  3, Laniyan Close, Opposite Honda Factory, KLM 6, Ota, Idiroko
-                  Expressway, Sango Ota, Ogun State, Nigeria.
-                </p>
-              </Link>
+              3, Laniyan Close, Opposite Honda Factory, KLM 6, Ota, Idiroko
+              Expressway, Sango Ota, Ogun State, Nigeria.
             </li>
           </ul>
         </Column2>
@@ -110,6 +110,7 @@ const Column2 = styled.div`
     font-size: 1rem;
     padding: 0.6rem 0;
     display: flex;
+    color: #fff;
   }
   @media (max-width: 1300px) {
     ul {
