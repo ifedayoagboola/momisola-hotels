@@ -16,15 +16,29 @@ const Footer = () => {
         <Column1>
           <h1>We never forget you have a choice!</h1>
           <Socials>
-            <Link to="https://web.facebook.com/momisolahotels">
-              <FacebookIcon />
+            <Link to="">
+              <FacebookIcon
+                onClick={(event) =>
+                  (window.location.href =
+                    "https://web.facebook.com/momisolahotels")
+                }
+              />
             </Link>
-            <Link to="https://www.instagram.com/momisolahotels/">
-              <InstagramIcon />
+            <Link to="">
+              <InstagramIcon
+                onClick={(event) =>
+                  (window.location.href =
+                    "https://www.instagram.com/momisolahotels/")
+                }
+              />
             </Link>
-            <Link to="https://api.whatsapp.com/send?phone=08131534590">
-              <WhatsappIcon />
-            </Link>
+
+            <WhatsappIcon
+              onClick={(event) =>
+                (window.location.href =
+                  "https://api.whatsapp.com/send?phone=08131534590")
+              }
+            />
           </Socials>
         </Column1>
         <Column2>
@@ -67,7 +81,7 @@ const Footer = () => {
 };
 const FooterBg = styled.div`
   background: #000d1a;
-  padding: 5rem 10rem;
+  padding: 5rem 3rem;
   text-align: left;
   @media (max-width: 1300px) {
     display: block;
@@ -77,6 +91,9 @@ const FooterBg = styled.div`
 const Row1 = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   @media (max-width: 1300px) {
     display: block;
   }
@@ -85,7 +102,6 @@ const Column1 = styled.div`
   h1 {
     font-size: 3rem;
     color: #fff;
-    margin: 1rem;
   }
   @media (max-width: 1300px) {
     h1 {
@@ -129,7 +145,7 @@ const Column3 = styled.div`
     font-size: 1.5rem;
     color: #fff;
   }
-  margin: 2rem 0 2rem 2rem;
+  /* margin: 2rem 0 2rem 2rem; */
   li {
     padding: 1rem 0;
   }
