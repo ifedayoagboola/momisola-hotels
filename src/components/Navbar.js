@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "../styles/NavbarStyles.css";
-import logo2 from "../images/momisola.svg";
+import logo2 from "../images/momisola2.svg";
 
 //import icons
 import { Bars } from "@styled-icons/fa-solid";
@@ -65,8 +65,11 @@ const ToggleBars = styled(Bars)`
   }
 `;
 
+const Logo = styled.div``;
+
 const Nav = styled.div`
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,18 +100,7 @@ const NavMenu = styled.div`
     display: none;
   }
 `;
-const Logo = styled.h1`
-  font-style: italic;
-  color: #fff;
-  font-size: 1.4rem;
-  img {
-    height: 80px;
-    width: 150px;
-  }
-  @media (max-width: 768px) {
-    font-size: 0.9rem;
-  }
-`;
+
 const NavBtn = styled.div`
   display: flex;
   align-items: center;

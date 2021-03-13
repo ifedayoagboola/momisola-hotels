@@ -93,7 +93,7 @@ const Row1 = styled.div`
   grid-template-columns: 2fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 130px;
   @media (max-width: 1300px) {
     display: block;
   }
@@ -153,14 +153,14 @@ const Column3 = styled.div`
     font-size: 1rem;
   }
   @media (max-width: 1300px) {
-    margin: 2rem 0.5rem;
+    margin: 2rem 0;
   }
 `;
 const Socials = styled.div``;
 const FacebookIcon = styled(Facebook)`
   color: #fff;
   width: 50px;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0;
 `;
 const InstagramIcon = styled(InstagramWithCircle)`
   color: #fff;
