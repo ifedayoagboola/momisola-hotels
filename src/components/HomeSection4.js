@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
 import mom20 from "../images/mom20.jpeg";
+import { Link } from "react-router-dom";
 
 const HomeSection4 = () => {
   return (
@@ -22,7 +23,9 @@ const HomeSection4 = () => {
           length of their stay. And there is telephone intercom for effective
           communication with the Receptionist and Bar.
         </p>
-        <Button primary="true">Book now</Button>
+        <Link to="/bookings">
+          <Button primary="true">Book now</Button>
+        </Link>
       </Description>
     </Section4>
   );

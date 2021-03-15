@@ -72,7 +72,9 @@ const Footer = () => {
               <Link to="/">Bookings</Link>
             </li>
           </ul>
-          <Button secondary="true">Book now</Button>
+          <Link to="/bookings">
+            <Button secondary="true">Book now</Button>
+          </Link>
         </Column3>
       </Row1>
       <p>copyright 2021@momisolahotels.com</p>
@@ -149,6 +151,7 @@ const Column3 = styled.div`
   li {
     padding: 1rem 0;
   }
+
   a {
     font-size: 1rem;
   }

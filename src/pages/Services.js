@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Bar from "../images/mom4.jpeg";
 import kings from "../images/mom14.jpeg";
 import mom8 from "../images/mom8.jpeg";
@@ -22,7 +23,9 @@ const Services = () => {
                 <p>
                   Room deliberately set to treat you like a queen that you are
                 </p>
-                <Button>Book now</Button>
+                <Link to="bookings">
+                  <Button>Book now</Button>
+                </Link>
               </Content>
             </Card>
           </GridItem>
@@ -34,7 +37,9 @@ const Services = () => {
               <Content>
                 <h1>Kings Room</h1>
                 <p>At Momisola Hotels, you are not lesser than a king.</p>
-                <Button>Book now</Button>
+                <Link to="bookings">
+                  <Button>Book now</Button>
+                </Link>
               </Content>
             </Card>
           </GridItem>
@@ -48,7 +53,9 @@ const Services = () => {
                 <p>
                   The best of the suites. Feels nothing less than your home.
                 </p>
-                <Button>Book now</Button>
+                <Link to="bookings">
+                  <Button>Book now</Button>
+                </Link>
               </Content>
             </Card>
           </GridItem>
@@ -62,7 +69,9 @@ const Services = () => {
               <Content>
                 <h1>Kitchen and Bar</h1>
                 <p>Drinks, local and international dishes, just a call away.</p>
-                <Button>Book now</Button>
+                <Link to="bookings">
+                  <Button>Book now</Button>
+                </Link>
               </Content>
             </Card>
           </GridItem>
@@ -74,7 +83,9 @@ const Services = () => {
               <Content>
                 <h1>Long term lodge</h1>
                 <p>Discounts on all lodges for more than three months.</p>
-                <Button>Book now</Button>
+                <Link to="bookings">
+                  <Button>Book now</Button>
+                </Link>
               </Content>
             </Card>
           </GridItem>
@@ -89,7 +100,9 @@ const Services = () => {
                   Fully Air-conditioned with Cable TV, internet and LAN phone
                   installed
                 </p>
-                <Button>Book now</Button>
+                <Link to="bookings">
+                  <Button>Book now</Button>
+                </Link>
               </Content>
             </Card>
           </GridItem>

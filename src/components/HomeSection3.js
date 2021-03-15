@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import mom12 from "../images/mom12.jpeg";
 import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 const HomeSection = () => {
   return (
@@ -14,7 +15,9 @@ const HomeSection = () => {
           button below. We are available 24/7 should you have any questions.
         </p>
         <p>You can also contact us by clicking on the contact button.</p>
-        <Button secondary="true">Book now</Button>
+        <Link to="/bookings">
+          <Button primary="true">Book now</Button>
+        </Link>
       </Description>
       <Image>
         <img src={mom12} alt="" />
