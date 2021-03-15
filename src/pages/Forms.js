@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
 
-export default function ContactUs() {
+function Forms() {
   function sendEmail(e) {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
@@ -33,3 +33,4 @@ export default function ContactUs() {
     </form>
   );
 }
+export default Forms;

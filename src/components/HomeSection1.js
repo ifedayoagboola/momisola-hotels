@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 import mom11 from "../images/mom11.jpeg";
 
@@ -19,7 +20,9 @@ const HomeSection1 = () => {
           experience, unforgettable encounters, business success, pleasant
           meetings, short- and long-term lodgings.
         </p>
-        <Button primary="true">Book now</Button>
+        <Link to="/bookings">
+          <Button primary="true">Book now</Button>
+        </Link>
       </Description>
       <Image>
         <img src={mom11} alt="Section1Image" />
