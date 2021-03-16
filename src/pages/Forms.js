@@ -1,11 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
+import Select from "react-select";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
 import Home from "./Home";
 
-function Forms() {
+const Forms = () => {
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
   function sendEmail(e) {
-    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+    e.preventDefault();
+    //This is important, i'm not sure why, but the email won't send without it
 
     emailjs
       .sendForm(
@@ -16,7 +23,7 @@ function Forms() {
       )
       .then(
         (result) => {
-          <Home />;
+          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
         },
         (error) => {
           console.log(error.text);
@@ -34,17 +41,19 @@ function Forms() {
         <input type="email" name="email" />
         <label>Phone</label>
         <input type="text" name="phone" />
+        <label>Room</label>
+        <Select options={options} />
         <label>Date in</label>
-        <input type="text" name="check_in" />
+        <input type="date" name="check_in" />
         <label>Date Out</label>
-        <input type="text" name="check_out" />
+        <input type="date" name="check_out" />
         <label>Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
     </StyledDiv>
   );
-}
+};
 
 const StyledDiv = styled.div`
   padding-top: 10rem;
