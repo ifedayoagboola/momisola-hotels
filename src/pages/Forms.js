@@ -55,7 +55,7 @@ const Forms = () => {
                 <label>Phone:</label>
                 <input type="text" name="phone" />
               </p>
-              {/* <p>
+              <p>
                 <label>Room:</label>
                 <section>
                   <option name="Kings" value="">
@@ -68,7 +68,7 @@ const Forms = () => {
                     Royal Suite
                   </option>
                 </section>
-              </p> */}
+              </p>
               <p>
                 <label>Date in:</label>
                 <input type="date" name="check_in" />
@@ -97,13 +97,14 @@ const Body = styled.div`
   color: #485e74;
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 5rem 1em 1em;
+  padding: 1em;
 `;
 const Container = styled.div`
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
+  margin-top: 5rem;
   span {
     color: #fff;
   }
@@ -164,10 +165,14 @@ const Contact = styled.div`
       border: 1px solid #c9e6ff;
       outline: none;
     }
+    textarea {
+      grid-template-columns: 1fr;
+    }
     input[type="submit"] {
       background: #c9e6ff;
       border: 0;
       text-transform: uppercase;
+      grid-template-columns: 1fr;
 
       &:hover,
       &:focus {

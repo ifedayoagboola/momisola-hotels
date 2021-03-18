@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
   window.addEventListener("scroll", changeBg);
 
   return (
-    <Nav className={navBg ? "active" : ""}>
+    <Nav className={navBg ? "active" : "non-active, non-active a"}>
       <Logo>
         <Link to="/">
           <img src={logo} alt="" />
@@ -76,7 +76,7 @@ const Nav = styled.div`
   padding: 1rem 3rem;
   position: fixed;
   width: 100%;
-  background: rgba(25, 29, 40 0.5);
+
   z-index: 999;
 `;
 
