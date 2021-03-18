@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "../styles/NavbarStyles.css";
-import logo2 from "../images/momisola2.svg";
+import logo from "../images/logo3.svg";
 
 //import icons
 import { Bars } from "@styled-icons/fa-solid";
@@ -23,7 +23,7 @@ const Navbar = ({ toggle }) => {
     <Nav className={navBg ? "active" : ""}>
       <Logo>
         <Link to="/">
-          <img src={logo2} alt="" />
+          <img src={logo} alt="" />
         </Link>
       </Logo>
 
@@ -76,6 +76,7 @@ const Nav = styled.div`
   padding: 1rem 3rem;
   position: fixed;
   width: 100%;
+  background: rgba(25, 29, 40 0.5);
   z-index: 999;
 `;
 
