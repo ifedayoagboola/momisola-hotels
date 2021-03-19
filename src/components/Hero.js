@@ -9,18 +9,18 @@ const Hero = ({ slides }) => {
   const length = slides.length;
   const timeout = useRef(null);
 
-  // useEffect(() => {
-  //   const nextSlide = () => {
-  //     setCurrent((current) => (current === length - 1 ? 0 : current + 1));
-  //   };
-  //   timeout.current = setTimeout(nextSlide, 7000);
+  useEffect(() => {
+    const nextSlide = () => {
+      setCurrent((current) => (current === length - 1 ? 0 : current + 1));
+    };
+    timeout.current = setTimeout(nextSlide, 7000);
 
-  //   return function () {
-  //     if (timeout.current) {
-  //       clearTimeout(timeout.current);
-  //     }
-  //   };
-  // }, [current, length]);
+    return function () {
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+      }
+    };
+  }, [current, length]);
 
   const nextSlide = () => {
     if (timeout.current) {

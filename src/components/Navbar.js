@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "../styles/NavbarStyles.css";
-import logo from "../images/logo3.svg";
+import logo from "../images/momisola.svg";
 
 //import icons
 import { Bars } from "@styled-icons/fa-solid";

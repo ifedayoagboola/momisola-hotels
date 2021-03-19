@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
+import letter from "../images/letter.svg";
+import telephone from "../images/telephone.svg";
+import location from "../images/location.svg";
 
 const Forms = () => {
   function sendEmail(e) {
@@ -9,7 +12,7 @@ const Forms = () => {
 
     emailjs
       .sendForm(
-        // "service_5s3y8qs",
+        "service_5s3y8qs",
         "template_moiktpf",
         e.target,
         "user_5SMN4ZHYasmTLuzDkBVy7"
@@ -34,15 +37,23 @@ const Forms = () => {
           <CompanyInfo>
             <h3>Momisola Hotels</h3>
             <ul>
-              <li>+234 814 774 7673</li>
-              <li>Bookings@momisolahotels.com</li>
-              <li>3, Laniyan Close, Opposite Honda Factory,</li>
+              <li>
+                <img src={telephone} alt="" />
+                +234 814 774 7673
+              </li>
+              <li>
+                <img src={letter} alt="" /> Bookings@momisolahotels.com
+              </li>
+              <li>
+                <img src={location} alt="" /> 3, Laniyan Close, Opposite Honda
+                Factory, KLM 6, Ota, Idiroko Expressway, Sango Ota, Ogun State,
+                Nigeria. Factory,
+              </li>
             </ul>
           </CompanyInfo>
           <Contact>
             <h3>Email Us</h3>
             <form className="contact-form" onSubmit={sendEmail}>
-              <input type="hidden" name="contact_number" />
               <p>
                 <label>Name:</label>
                 <input type="text" name="name" />
@@ -57,17 +68,18 @@ const Forms = () => {
               </p>
               <p>
                 <label>Room:</label>
-                <section>
-                  <option name="Kings" value="">
+
+                <select>
+                  <option name="room" value="king">
                     Kings Room
                   </option>
-                  <option name="Queens" value="">
+                  <option name="room" value="queen">
                     Queens Room
                   </option>
-                  <option name="Suite" value="">
+                  <option name="room" value="royal">
                     Royal Suite
                   </option>
-                </section>
+                </select>
               </p>
               <p>
                 <label>Date in:</label>
@@ -103,7 +115,7 @@ const Container = styled.div`
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em;
+  /* padding: 1em; */
   margin-top: 5rem;
   span {
     color: #fff;
@@ -117,6 +129,7 @@ const Brand = styled.h1`
 `;
 const Wrapper = styled.div`
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+
   > * {
     padding: 1em;
   }
@@ -130,14 +143,17 @@ const Wrapper = styled.div`
 `;
 const CompanyInfo = styled.div`
   background: #c9e6ff;
-  ul,
+  li,
   h3 {
     text-align: center;
     margin: 0 0 1rem 0;
   }
-  ul {
+  li {
     list-style: none;
     padding: 0;
+  }
+  img {
+    width: 25px;
   }
   @media (min-width: 700px) {
     h3,
@@ -152,22 +168,23 @@ const Contact = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    overflow: hidden;
+
     label {
       display: block;
     }
     p {
       margin: 0;
     }
-    input,
-    textarea {
+    p input,
+    p textarea,
+    p select {
       width: 100%;
       padding: 1em;
       border: 1px solid #c9e6ff;
       outline: none;
     }
-    textarea {
-      grid-template-columns: 1fr;
-    }
+
     input[type="submit"] {
       background: #c9e6ff;
       border: 0;
@@ -180,6 +197,10 @@ const Contact = styled.div`
         color: #fff;
         transition: background-color 2s ease-out;
       }
+    }
+    p:last-of-type,
+    p:nth-last-child(2) {
+      grid-column: 1/3;
     }
   }
 `;
