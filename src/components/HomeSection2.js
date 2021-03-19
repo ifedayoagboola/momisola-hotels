@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import mom3 from "../images/mom3.jpeg";
+import mom3 from "../images/pic8.jpeg";
 import mom7 from "../images/mom7.jpeg";
 
 const HomeSection2 = () => {

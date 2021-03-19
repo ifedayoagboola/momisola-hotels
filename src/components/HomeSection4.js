@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-import mom20 from "../images/mom20.jpeg";
+import mom20 from "../images/pic2.jpeg";
 import { Link } from "react-router-dom";
 
 const HomeSection4 = () => {

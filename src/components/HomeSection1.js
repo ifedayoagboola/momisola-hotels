@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 
-import mom11 from "../images/mom11.jpeg";
+import mom11 from "../images/pic7.jpeg";
 
 const HomeSection1 = () => {
   return (
