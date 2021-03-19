@@ -6,6 +6,7 @@ import mom7 from "../images/mom7.jpeg";
 const HomeSection2 = () => {
   return (
     <Section2>
+      <Rule></Rule>
       <h1>Explore Our Services</h1>
       <Images>
         <ImageA>
@@ -40,6 +41,11 @@ const Section2 = styled.div`
       padding: 1rem 0 0.5rem;
     }
   }
+`;
+const Rule = styled.div`
+  height: 0.1rem;
+  width: 100%;
+  background: #cf843a;
 `;
 const Images = styled.div`
   display: grid;

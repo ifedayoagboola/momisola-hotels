@@ -35,7 +35,7 @@ const Forms = () => {
         </Brand>
         <Wrapper>
           <CompanyInfo>
-            <h3>Momisola Hotels</h3>
+            <h3>Quick reach</h3>
             <ul>
               <li>
                 <img src={telephone} alt="" />
@@ -52,7 +52,7 @@ const Forms = () => {
             </ul>
           </CompanyInfo>
           <Contact>
-            <h3>Email Us</h3>
+            <h3>Bookings form</h3>
             <form className="contact-form" onSubmit={sendEmail}>
               <p>
                 <label>Name:</label>
@@ -67,9 +67,12 @@ const Forms = () => {
                 <input type="text" name="phone" />
               </p>
               <p>
-                <label>Room:</label>
+                <label>Rooms:</label>
 
                 <select>
+                  <option disabed name="room" value="king">
+                    Select Room
+                  </option>
                   <option name="room" value="king">
                     Kings Room
                   </option>
@@ -82,11 +85,11 @@ const Forms = () => {
                 </select>
               </p>
               <p>
-                <label>Date in:</label>
+                <label>Check-In:</label>
                 <input type="date" name="check_in" />
               </p>
               <p>
-                <label>Date Out:</label>
+                <label>Check-Out:</label>
                 <input type="date" name="check_out" />
               </p>
               <p>
@@ -180,7 +183,7 @@ const Contact = styled.div`
     p textarea,
     p select {
       width: 100%;
-      padding: 1em;
+      padding: 1em 0;
       border: 1px solid #c9e6ff;
       outline: none;
     }
