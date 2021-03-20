@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 
 import mom11 from "../images/pic7.jpeg";
 
+//Animation
+import { motion } from "framer-motion";
+import { fade } from "../Animate";
+
 const HomeSection1 = () => {
   return (
     <Section1>
-      <Description>
+      <Description variants={fade}>
         <h1>Welcome to Momisola Hotels</h1>
         <p>
           The vision of the Momisola Hotels is to put hospitality services on
@@ -45,7 +49,7 @@ const Section1 = styled.div`
     text-align: center;
   }
 `;
-const Description = styled.div`
+const Description = styled(motion.div)`
   flex: 1;
   padding-right: 5rem;
   button {

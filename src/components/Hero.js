@@ -5,6 +5,10 @@ import { Button } from "./Button";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
+//Animation
+import { motion } from "framer-motion";
+import { heroSlider } from "../Animate";
+
 const Hero = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -47,7 +51,12 @@ const Hero = ({ slides }) => {
           return (
             <HeroSlide key={index}>
               {index === current && (
-                <HeroSlider>
+                <HeroSlider
+                  exit="exit"
+                  variants={heroSlider}
+                  initial="hidden"
+                  animate="show"
+                >
                   <HeroImage src={slide.image} alt={slide.alt} />
                   <HeroContent>
                     <h1>{slide.title}</h1>
@@ -93,7 +102,7 @@ const HeroSlide = styled.div`
   width: 100%;
   height: 100%;
 `;
-const HeroSlider = styled.div`
+const HeroSlider = styled(motion.div)`
   position: absolute;
   top: 0;
   left: 0;
