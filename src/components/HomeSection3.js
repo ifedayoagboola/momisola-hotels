@@ -86,6 +86,7 @@ const Image = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+    border: 2px solid #fff;
   }
 `;
 export default HomeSection;

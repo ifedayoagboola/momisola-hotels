@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
   window.addEventListener("scroll", changeBg);
 
   return (
-    <Nav className={navBg ? "active" : "non-active, non-active a"}>
+    <Nav className={navBg ? "active" : "non-active"}>
       <Logo>
         <Link to="/">
           <img src={logo} alt="" />

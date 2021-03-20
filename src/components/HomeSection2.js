@@ -8,6 +8,7 @@ const HomeSection2 = () => {
     <Section2>
       <Rule></Rule>
       <h1>Explore Our Services</h1>
+
       <Images>
         <ImageA>
           <img src={mom3} alt="" />
@@ -35,6 +36,7 @@ const Section2 = styled.div`
   h1 {
     padding: 3rem 0;
   }
+
   @media (max-width: 1300px) {
     margin: 1rem;
     h1 {
@@ -43,9 +45,9 @@ const Section2 = styled.div`
   }
 `;
 const Rule = styled.div`
-  height: 0.1rem;
   width: 100%;
-  background: #cf843a;
+  height: 0.2rem;
+  background: #000d1a;
 `;
 const Images = styled.div`
   display: grid;
@@ -64,8 +66,10 @@ const ImageA = styled.div`
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   width: 550px;
+
   img {
     width: 100%;
+    border: 3px solid #fff;
   }
   p {
     font-size: 1rem;
@@ -84,8 +88,10 @@ const ImageB = styled.div`
   grid-row: 2 / span 1;
   width: 500px;
   margin-left: 8rem;
+
   img {
     width: 100%;
+    border: 3px solid #fff;
   }
   p {
     font-size: 1rem;

@@ -13,6 +13,7 @@ html, body{
     font-family: "Lato", sans-serif;
   color: #333;
   line-height: 1.2;
+  background: rgb(207, 132, 58, 0.1);
 }
 a {
     color: #fff;

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import styled, { css } from "styled-components/macro";
+import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { IoArrowForward, IoArrowBack } from "react-icons/io5";
@@ -51,10 +52,12 @@ const Hero = ({ slides }) => {
                   <HeroContent>
                     <h1>{slide.title}</h1>
                     <p>{slide.slogan}</p>
-                    <Button to={slide.path} primary="true">
-                      {slide.label}
-                      <Arrow />
-                    </Button>
+                    <Link to={slide.path}>
+                      <Button primary="true">
+                        {slide.label}
+                        <Arrow />
+                      </Button>
+                    </Link>
                   </HeroContent>
                 </HeroSlider>
               )}
