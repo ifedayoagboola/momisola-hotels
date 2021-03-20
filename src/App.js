@@ -17,15 +17,11 @@ import Forms from "./pages/Forms";
 import { AnimatePresence } from "framer-motion";
 
 //react routing & switching
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-} from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 
 function App() {
   const location = useLocation();
+  console.log(location);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -33,32 +29,30 @@ function App() {
   };
 
   return (
-    <Router>
-      <div className="App">
-        <GlobalStyle />
-        <Navbar toggle={toggle} />
-        <Dropdown isOpen={isOpen} toggle={toggle} />
-        <AnimatePresence>
-          <Switch location={location} key={location.pathname}>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/services">
-              <Services />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/bookings">
-              <Forms />
-            </Route>
-          </Switch>
-        </AnimatePresence>
-      </div>
-    </Router>
+    <div className="App">
+      <GlobalStyle />
+      <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/bookings">
+            <Forms />
+          </Route>
+        </Switch>
+      </AnimatePresence>
+    </div>
   );
 }
 
