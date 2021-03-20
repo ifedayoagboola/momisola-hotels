@@ -5,9 +5,18 @@ import ServiceSection from "../components/ServiceSection";
 import Footer from "../components/Footer";
 import house1 from "../images/mom4.jpeg";
 
+//Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animate";
+
 const About = () => {
   return (
-    <div>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <AboutContainer>
         <ServicesContainer>
           <ServiceSection />
@@ -15,7 +24,7 @@ const About = () => {
       </AboutContainer>
       <HomeSection1 />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 const ServicesContainer = styled.div`

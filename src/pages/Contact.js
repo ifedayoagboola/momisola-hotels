@@ -6,9 +6,18 @@ import letter from "../images/letter.svg";
 import location from "../images/location.svg";
 import Footer from "../components/Footer";
 
+//Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animate";
+
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <ContactPage>
         <MapSection>
           <iframe
@@ -45,7 +54,7 @@ const Contact = () => {
       </ContactPage>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

@@ -66,10 +66,10 @@ const Footer = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/">About us</Link>
+              <Link to="/about">About us</Link>
             </li>
             <li>
-              <Link to="/">Bookings</Link>
+              <Link to="/services">Bookings</Link>
             </li>
           </ul>
           <Link to="/bookings">
@@ -155,6 +155,7 @@ const Column3 = styled.div`
   a {
     font-size: 1rem;
   }
+
   @media (max-width: 1300px) {
     margin: 2rem 0;
   }

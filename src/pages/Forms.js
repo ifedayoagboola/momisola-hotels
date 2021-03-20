@@ -5,6 +5,10 @@ import letter from "../images/letter.svg";
 import telephone from "../images/telephone.svg";
 import location from "../images/location.svg";
 
+//Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animate";
+
 const Forms = () => {
   function sendEmail(e) {
     e.preventDefault();
@@ -28,7 +32,7 @@ const Forms = () => {
   }
 
   return (
-    <Body>
+    <Body exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Container>
         <Brand>
           <span>Book</span> a room
@@ -107,7 +111,7 @@ const Forms = () => {
   );
 };
 
-const Body = styled.div`
+const Body = styled(motion.div)`
   background: #000d1a;
   color: #485e74;
   line-height: 1.6;

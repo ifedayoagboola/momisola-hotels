@@ -10,9 +10,18 @@ import room15 from "../images/mom9.jpeg";
 import HomeSection4 from "../components/HomeSection4";
 import Footer from "../components/Footer";
 
+//Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animate";
+
 const Services = () => {
   return (
-    <div>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <Mother>
         <Grid>
           <GridItem>
@@ -110,7 +119,7 @@ const Services = () => {
       </Mother>
       <HomeSection4 />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
