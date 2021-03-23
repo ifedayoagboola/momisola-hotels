@@ -77,7 +77,9 @@ const Footer = () => {
           </Link>
         </Column3>
       </Row1>
-      <p>copyright 2021@momisolahotels.com</p>
+      <p>
+        2021 © Copyright <a href="momisolahotels.com">Momisola Hotels</a>.
+      </p>
     </FooterBg>
   );
 };
@@ -85,6 +87,9 @@ const FooterBg = styled.div`
   background: #000d1a;
   padding: 5rem 3rem;
   text-align: left;
+  p a:last-of-type {
+    color: #6e445d;
+  }
   @media (max-width: 1300px) {
     display: block;
     padding: 1rem;
@@ -162,32 +167,32 @@ const Column3 = styled.div`
 `;
 const Socials = styled.div``;
 const FacebookIcon = styled(Facebook)`
-  color: #fff;
+  color: #cf843a;
   width: 50px;
   margin: 1rem 1rem 1rem 0;
 `;
 const InstagramIcon = styled(InstagramWithCircle)`
-  color: #fff;
+  color: #cf843a;
   width: 60px;
   margin: 1rem;
 `;
 const WhatsappIcon = styled(Whatsapp)`
-  color: #fff;
+  color: #cf843a;
   width: 75px;
   margin: 1rem;
 `;
 const PhoneIcon = styled(Telephone)`
-  color: #fff;
+  color: #cf843a;
   width: 30px;
   margin-right: 0.7rem;
 `;
 const LocationIcon = styled(GeoAlt)`
-  color: #fff;
+  color: #cf843a;
   width: 100px;
   margin-right: 0.7rem;
 `;
 const MailIcon = styled(EmailOutline)`
-  color: #fff;
+  color: #cf843a;
   width: 30px;
   margin-right: 0.7rem;
 `;

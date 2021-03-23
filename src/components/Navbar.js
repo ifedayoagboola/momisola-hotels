@@ -92,7 +92,6 @@ const Logo = styled.div``;
 const Line = styled(motion.div)`
   position: absolute;
   height: 0.2rem;
-  /* background: #cf843a; */
   width: 0%;
   bottom: -80%;
   left: 20%;
