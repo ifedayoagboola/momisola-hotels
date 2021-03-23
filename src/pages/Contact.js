@@ -32,13 +32,13 @@ const Contact = () => {
         <ContactSection>
           <ContactItem
             icon={telephone}
-            text1={"+234 814 774 7673"}
+            text1={"+234 8147 747 673"}
             text2={"+234 8131 534 590"}
             title={"phone"}
           />
           <ContactItem
             icon={letter}
-            text1={"Bookings@momisolahotels.com"}
+            text1={"bookings@momisolahotels.com"}
             text2={"customercare@momisolahotels.com"}
             title={"email"}
           />

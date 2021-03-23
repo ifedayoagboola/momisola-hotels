@@ -7,35 +7,51 @@ import mom11 from "../images/pic7.jpeg";
 
 //Animation
 import { motion } from "framer-motion";
-import { fade } from "../Animate";
+import { imageAnime } from "../Animate";
+import { section4Anime } from "../Animate";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 
 const HomeSection1 = () => {
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.5 });
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
   return (
-    <Section1>
-      <Description variants={fade}>
-        <h1>Welcome to Momisola Hotels</h1>
-        <p>
+    <Section1 ref={element} animate={controls}>
+      <Description>
+        <motion.h1
+          variants={section4Anime}
+          initial="hiddenytop"
+          animate={controls}
+        >
+          Welcome to Momisola Hotels
+        </motion.h1>
+        <motion.p variants={section4Anime} initial="hiddenx" animate={controls}>
           The vision of the Momisola Hotels is to put hospitality services on
           the highest level at an affordable cost in order to satisfy the
           demands and expectations of our guests.
-        </p>
-        <p>
+        </motion.p>
+        <motion.p>
           Our aim is to make Momisola Hotels a place for excellent dining
           experience, unforgettable encounters, business success, pleasant
           meetings, short- and long-term lodgings.
-        </p>
+        </motion.p>
         <Link to="/bookings">
           <Button primary="true">Book now</Button>
         </Link>
       </Description>
       <Image>
-        <img src={mom11} alt="Section1Image" />
+        <motion.img variants={imageAnime} src={mom11} alt="Section1Image" />
       </Image>
     </Section1>
   );
 };
 
-const Section1 = styled.div`
+const Section1 = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -49,7 +65,7 @@ const Section1 = styled.div`
     text-align: center;
   }
 `;
-const Description = styled(motion.div)`
+const Description = styled.div`
   flex: 1;
   padding-right: 5rem;
   button {
@@ -68,7 +84,7 @@ const Image = styled.div`
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
   }
 `;
 

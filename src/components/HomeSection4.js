@@ -4,25 +4,45 @@ import { Button } from "./Button";
 import mom20 from "../images/pic2.jpeg";
 import { Link } from "react-router-dom";
 
+//Animate
+import { motion } from "framer-motion";
+import { section4Anime } from "../Animate";
+import { imageAnime } from "../Animate";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+
 const HomeSection4 = () => {
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.5 });
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
   return (
-    <Section4>
+    <Section4 ref={element} animate={controls}>
       <Image>
-        <img src={mom20} alt="Section4Image" />
+        <motion.img variants={imageAnime} src={mom20} alt="Section4Image" />
       </Image>
       <Description>
-        <h1>Explore our beautiful rooms</h1>
-        <p>
+        <motion.h1
+          variants={section4Anime}
+          initial="hiddenytop"
+          animate={controls}
+        >
+          Explore our beautiful rooms
+        </motion.h1>
+        <motion.p variants={section4Anime} initial="hiddenx" animate={controls}>
           Our rooms and suite are fitted with bedside refrigerator; fully
           airconditioned with ecofriendly Thermocool Inverter Split
           Air-conditioners and in addition, each of the rooms has an electric
           ceiling fan fitted.
-        </p>
-        <p>
+        </motion.p>
+        <motion.p variants={section4Anime} initial="hiddenx" animate={controls}>
           The hotel provides free internet (Wi-Fi) access to guests during the
           length of their stay. And there is telephone intercom for effective
           communication with the Receptionist and Bar.
-        </p>
+        </motion.p>
         <Link to="/bookings">
           <Button primary="true">Book now</Button>
         </Link>
@@ -30,7 +50,7 @@ const HomeSection4 = () => {
     </Section4>
   );
 };
-const Section4 = styled.div`
+const Section4 = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;

@@ -8,6 +8,7 @@ import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 //Animation
 import { motion } from "framer-motion";
 import { heroSlider } from "../Animate";
+import { fade } from "../Animate";
 
 const Hero = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -58,11 +59,11 @@ const Hero = ({ slides }) => {
                   animate="show"
                 >
                   <HeroImage src={slide.image} alt={slide.alt} />
-                  <HeroContent>
+                  <HeroContent variant={fade}>
                     <h1>{slide.title}</h1>
                     <p>{slide.slogan}</p>
                     <Link to={slide.path}>
-                      <Button primary="true">
+                      <Button variant={fade} primary="true">
                         {slide.label}
                         <Arrow />
                       </Button>
@@ -137,7 +138,7 @@ const HeroImage = styled.img`
   height: 100vh;
   object-fit: cover;
 `;
-const HeroContent = styled.div`
+const HeroContent = styled(motion.div)`
   display: flex;
   flex-direction: column;
   position: relative;

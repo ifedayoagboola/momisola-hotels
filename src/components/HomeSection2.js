@@ -3,14 +3,27 @@ import styled from "styled-components";
 import mom3 from "../images/pic8.jpeg";
 import mom7 from "../images/mom7.jpeg";
 
+//Animation
+import { motion } from "framer-motion";
+import { section2Anime } from "../Animate";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+
 const HomeSection2 = () => {
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.5 });
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
   return (
-    <Section2>
+    <Section2 ref={element}>
       <Rule></Rule>
       <h1>Explore Our Services</h1>
 
       <Images>
-        <ImageA>
+        <ImageA variants={section2Anime} initial="hidden2" animate={controls}>
           <img src={mom3} alt="" />
           <p>
             We are elegant and efficient enough to accommodate you. Feel free to
@@ -18,7 +31,7 @@ const HomeSection2 = () => {
             offer. click on bookings above.
           </p>
         </ImageA>
-        <ImageB>
+        <ImageB variants={section2Anime} initial="hidden1" animate={controls}>
           <img src={mom7} alt="" />
           <p>
             We offer event services, long and short term lodging, Rooms and
@@ -62,7 +75,7 @@ const Images = styled.div`
     grid-template-rows: 1fr;
   }
 `;
-const ImageA = styled.div`
+const ImageA = styled(motion.div)`
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   width: 550px;
@@ -83,7 +96,7 @@ const ImageA = styled.div`
     }
   }
 `;
-const ImageB = styled.div`
+const ImageB = styled(motion.div)`
   grid-column: 2 / span 2;
   grid-row: 2 / span 1;
   width: 500px;

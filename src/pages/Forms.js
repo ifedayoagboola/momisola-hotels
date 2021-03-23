@@ -43,10 +43,10 @@ const Forms = () => {
             <ul>
               <li>
                 <img src={telephone} alt="" />
-                +234 814 774 7673
+                +234 8147 747 673
               </li>
               <li>
-                <img src={letter} alt="" /> Bookings@momisolahotels.com
+                <img src={letter} alt="" /> bookings@momisolahotels.com
               </li>
               <li>
                 <img src={location} alt="" /> 3, Laniyan Close, Opposite Honda

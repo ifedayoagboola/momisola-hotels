@@ -46,11 +46,11 @@ const Footer = () => {
             <h3>Reach out</h3>
             <li>
               <PhoneIcon />
-              +234 8131 534 590 <br /> +234 814 774 7673
+              +234 8131 534 590 <br /> +234 8147 747 673
             </li>
             <li>
               <MailIcon />
-              Bookings@momisolahotels.com
+              bookings@momisolahotels.com
             </li>
             <li>
               <LocationIcon />
