@@ -60,15 +60,15 @@ const Forms = () => {
             <form className="contact-form" onSubmit={sendEmail}>
               <p>
                 <label>Name:</label>
-                <input type="text" name="name" />
+                <input type="text" name="name" required />
               </p>
               <p>
                 <label>Email:</label>
-                <input type="email" name="email" />
+                <input type="email" name="email" required />
               </p>
               <p>
                 <label>Phone:</label>
-                <input type="text" name="phone" />
+                <input type="text" name="phone" required />
               </p>
               <p>
                 <label>Rooms:</label>
@@ -152,7 +152,7 @@ const CompanyInfo = styled.div`
   background: #c9e6ff;
   li,
   h3 {
-    text-align: center;
+    text-align: left;
     margin: 0 0 1rem 0;
   }
   li {
