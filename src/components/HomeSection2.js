@@ -65,7 +65,7 @@ const Section2 = styled.div`
 const Rule = styled(motion.div)`
   width: 100%;
   height: 0.2rem;
-  background: #000d1a;
+  background: #6e445d;
 `;
 const Images = styled.div`
   display: grid;

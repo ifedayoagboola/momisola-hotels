@@ -7,7 +7,7 @@ import { InstagramWithCircle } from "@styled-icons/entypo-social/InstagramWithCi
 import { Whatsapp } from "@styled-icons/bootstrap/Whatsapp";
 import { Telephone } from "@styled-icons/bootstrap/Telephone";
 import { GeoAlt } from "@styled-icons/bootstrap/GeoAlt";
-import { MailWithCircle } from "@styled-icons/entypo-social/MailWithCircle";
+import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
 
 const Footer = () => {
   return (
@@ -186,7 +186,7 @@ const LocationIcon = styled(GeoAlt)`
   width: 100px;
   margin-right: 0.7rem;
 `;
-const MailIcon = styled(MailWithCircle)`
+const MailIcon = styled(EmailOutline)`
   color: #fff;
   width: 30px;
   margin-right: 0.7rem;
