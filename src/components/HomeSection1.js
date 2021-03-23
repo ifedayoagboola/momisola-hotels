@@ -21,9 +21,10 @@ const HomeSection1 = () => {
     controls.start("hidden");
   }
   return (
-    <Section1 ref={element} animate={controls}>
+    <Section1>
       <Description>
         <motion.h1
+          ref={element}
           variants={section4Anime}
           initial="hiddenytop"
           animate={controls}

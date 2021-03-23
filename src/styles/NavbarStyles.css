@@ -4,3 +4,9 @@
 .non-active {
   background: rgb(25, 29, 40, 0.5);
 }
+.linebg1 {
+  background: #6e445d;
+}
+.linebg2 {
+  background: #cf843a;
+}

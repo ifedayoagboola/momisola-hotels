@@ -67,15 +67,15 @@ export const section1Anime = {
 };
 export const section2Anime = {
   hidden1: {
-    y: 300,
+    y: 100,
   },
   hidden2: {
-    y: -300,
+    y: -100,
   },
   show: {
     y: 0,
     transition: {
-      ease: "easeIn",
+      ease: "easeOut",
       duration: 1,
     },
   },

@@ -12,8 +12,10 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Forms from "./pages/Forms";
 
-//Framer Motion
+//Scroll top
+import ScrollTop from "./components/ScrollTop";
 
+//Framer Motion
 import { AnimatePresence } from "framer-motion";
 
 //react routing & switching
@@ -31,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <ScrollTop />
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <AnimatePresence exitBeforeEnter>

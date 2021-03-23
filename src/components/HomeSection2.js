@@ -18,8 +18,13 @@ const HomeSection2 = () => {
     controls.start("hidden");
   }
   return (
-    <Section2 ref={element}>
-      <Rule></Rule>
+    <Section2>
+      <Rule
+        ref={element}
+        transition={{ duration: 1.5 }}
+        initial={{ width: "0%" }}
+        animate={{ controls, width: "100%" }}
+      />
       <h1>Explore Our Services</h1>
 
       <Images>
@@ -57,7 +62,7 @@ const Section2 = styled.div`
     }
   }
 `;
-const Rule = styled.div`
+const Rule = styled(motion.div)`
   width: 100%;
   height: 0.2rem;
   background: #000d1a;

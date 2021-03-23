@@ -20,9 +20,14 @@ const HomeSection4 = () => {
     controls.start("hidden");
   }
   return (
-    <Section4 ref={element} animate={controls}>
+    <Section4>
       <Image>
-        <motion.img variants={imageAnime} src={mom20} alt="Section4Image" />
+        <motion.img
+          ref={element}
+          variants={imageAnime}
+          src={mom20}
+          alt="Section4Image"
+        />
       </Image>
       <Description>
         <motion.h1

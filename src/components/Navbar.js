@@ -1,14 +1,19 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "../styles/NavbarStyles.css";
 import logo from "../images/momisola.svg";
 
+//Animation
+import { motion } from "framer-motion";
+
 //import icons
 import { Bars } from "@styled-icons/fa-solid";
 
 const Navbar = ({ toggle }) => {
+  const { pathname } = useLocation();
   const [navBg, setNavBg] = useState(false);
   const changeBg = () => {
     if (window.scrollY >= 80) {
@@ -31,12 +36,30 @@ const Navbar = ({ toggle }) => {
         <ul>
           <li>
             <Link to="/">Home</Link>
+            <Line
+              className={navBg ? "linebg1" : "linebg2"}
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/" ? "60%" : "0%" }}
+            />
           </li>
           <li>
             <Link to="/about">About</Link>
+            <Line
+              className={navBg ? "linebg1" : "linebg2"}
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/about" ? "60%" : "0%" }}
+            />
           </li>
           <li>
             <Link to="/services">Bookings</Link>
+            <Line
+              className={navBg ? "linebg1" : "linebg2"}
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/services" ? "60%" : "0%" }}
+            />
           </li>
         </ul>
       </NavMenu>
@@ -66,6 +89,14 @@ const ToggleBars = styled(Bars)`
 `;
 
 const Logo = styled.div``;
+const Line = styled(motion.div)`
+  position: absolute;
+  height: 0.2rem;
+  /* background: #cf843a; */
+  width: 0%;
+  bottom: -80%;
+  left: 20%;
+`;
 
 const Nav = styled.div`
   height: 80px;
@@ -87,6 +118,7 @@ const NavMenu = styled.div`
     align-items: center;
   }
   li {
+    position: relative;
     list-style: none;
     margin-left: 3rem;
     padding: 0 1rem;
