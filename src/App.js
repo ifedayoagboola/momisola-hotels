@@ -9,6 +9,7 @@ import Dropdown from "./components/Dropdown";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Forms from "./pages/Forms";
 
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
           </Route>
           <Route path="/bookings">
             <Forms />

@@ -61,6 +61,15 @@ const Navbar = ({ toggle }) => {
               animate={{ width: pathname === "/services" ? "60%" : "0%" }}
             />
           </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+            <Line
+              className={navBg ? "linebg1" : "linebg2"}
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/gallery" ? "60%" : "0%" }}
+            />
+          </li>
         </ul>
       </NavMenu>
       <NavBtn>
