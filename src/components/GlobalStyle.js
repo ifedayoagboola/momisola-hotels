@@ -5,12 +5,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
  
 
 }
 html, body{
     overflow-x: hidden;
-    font-family: "Lato", sans-serif;
+    /* font-family: "Lato", sans-serif; */
   color: #333;
   line-height: 1.2;
   background: rgb(207, 132, 58, 0.1);
