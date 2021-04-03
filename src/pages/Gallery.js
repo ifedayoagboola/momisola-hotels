@@ -1,5 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+
+import Footer from "../components/Footer";
+
+//Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animate";
+
 import mom1 from "../images/gallery/mom1.jpeg";
 import mom2 from "../images/gallery/mom2.jpeg";
 import mom3 from "../images/gallery/mom3.jpeg";
@@ -32,7 +39,12 @@ import mom29 from "../images/gallery/mom29.jpeg";
 
 const Gallery = () => {
   return (
-    <>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <Parent>
         {/* <img src={mom1} alt="" /> */}
         <img src={mom2} alt="" />
@@ -64,7 +76,8 @@ const Gallery = () => {
         <img src={mom28} alt="" />
         <img src={mom29} alt="" />
       </Parent>
-    </>
+      <Footer />
+    </motion.div>
   );
 };
 const Parent = styled.div`

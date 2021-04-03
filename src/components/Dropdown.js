@@ -23,6 +23,9 @@ const Dropdown = ({ isOpen, toggle }) => {
               <li>
                 <Link to="/services">Bookings</Link>
               </li>
+              <li>
+                <Link to="/gallery">Gallery</Link>
+              </li>
             </ul>
           </NavMenu>
         </DropdownMenu>
